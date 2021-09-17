@@ -83,7 +83,7 @@ fn convert_xlm_to_inr(xlm_amt: f32) -> Result<f32, Box<dyn std::error::Error>> {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let xai_amt: f32 = 508.0736;
+    let xai_amt: f32 = 100;
     let xlm_amt = convert_xai_to_xlm(xai_amt)?;
     let inr_amt = convert_xlm_to_inr(xlm_amt)?;
     let latest_apy = get_apy()?;
